@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('stopwatchbg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1; 
+    width: 70%; 
+    max-width: 600px; 
+    margin: 100px auto; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    padding: 40px 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.timer {
+    font-size: 90px; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 20px; 
+    padding: 15px 30px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f44336; 
+    color: white; 
+}
+button:hover {
+    background-color: #c62828;
+}
+
+button.pause:hover, button.reset:hover, button.lap:hover {
+    background-color: #c62828;
+}
+
+.lap-times {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lap-times li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
